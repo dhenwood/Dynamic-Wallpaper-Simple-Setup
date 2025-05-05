@@ -20,6 +20,17 @@ xapi.event.on('UserInterface Extensions Widget Action', (event) => {
     clearPanel();
   }else if(event.WidgetId == 'liveVideoTime' && event.Type == 'pressed'){
     if (event.Value == '1'){
+      var video = "Smoke360"
+      const url = `https://www.employees.org/~dhenwood/video/time.html?ipAddress=${ipAddress}&username=${username}&password=${password}&video=${video}`
+      console.log("url: " + url)
+      xapi.command("UserInterface WebView Display", {Url: url, Title: "Live Wallpaper"})
+    }else if (event.Value == '2'){
+      var video = "webexDesk"
+      const url = `https://www.employees.org/~dhenwood/video/time.html?ipAddress=${ipAddress}&username=${username}&password=${password}&video=${video}`
+      console.log("url: " + url)
+      xapi.command("UserInterface WebView Display", {Url: url, Title: "Live Wallpaper"})
+    }else if (event.Value == '3'){
+      var video = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny"
       const url = `https://www.employees.org/~dhenwood/video/time.html?ipAddress=${ipAddress}&username=${username}&password=${password}&video=${video}`
       console.log("url: " + url)
       xapi.command("UserInterface WebView Display", {Url: url, Title: "Live Wallpaper"})
