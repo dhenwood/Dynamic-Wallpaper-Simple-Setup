@@ -2,6 +2,8 @@
 
 This github repo explains the steps to deploying the Dynamic Wallpaper experience on a Cisco video device as detailed here: https://github.com/dhenwood/Dynamic-Wallpaper
 
+![example](https://github.com/dhenwood/Dynamic-Wallpaper-Simple-Setup/blob/main/Navigator%20Example.png)
+
 ### Step 1
 Download this repo by selecting the green Code button at the top right, and then selecting Download ZIP. Once downloaded, unzip the file on your computer
 
