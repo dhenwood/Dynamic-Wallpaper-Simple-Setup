@@ -1,7 +1,7 @@
 <Extensions><Version>1.11</Version><Panel>
     <PanelId>wallpaperPageId</PanelId>
     <Origin>local</Origin>
-    <Order>2</Order>
+    <Order>1</Order>
     <Location>HomeScreen</Location>
     <Icon>Blinds</Icon>
     <Name>Wallpaper</Name>
@@ -43,11 +43,11 @@
             </Value>
             <Value>
               <Key>2</Key>
-              <Name>B</Name>
+              <Name>Webex Desk</Name>
             </Value>
             <Value>
               <Key>3</Key>
-              <Name>C</Name>
+              <Name>Big Buck Bunny</Name>
             </Value>
           </ValueSpace>
         </Widget>
