@@ -1,7 +1,9 @@
-<Extensions><Version>1.11</Version><Panel>
+<Extensions>
+  <Version>1.11</Version>
+  <Panel>
+    <Order>2</Order>
     <PanelId>wallpaperPageId</PanelId>
     <Origin>local</Origin>
-    <Order>1</Order>
     <Location>HomeScreen</Location>
     <Icon>Blinds</Icon>
     <Name>Wallpaper</Name>
@@ -16,60 +18,60 @@
           <Options>size=4</Options>
           <ValueSpace>
             <Value>
-              <Key>1</Key>
+              <Key>wallpaperForestRiver</Key>
               <Name>Forest</Name>
             </Value>
             <Value>
-              <Key>2</Key>
+              <Key>wallpaperBeachSand</Key>
               <Name>Beach</Name>
             </Value>
             <Value>
-              <Key>3</Key>
+              <Key>wallpaperWaterfall</Key>
               <Name>Waterfall</Name>
             </Value>
           </ValueSpace>
         </Widget>
       </Row>
       <Row>
-        <Name>Dynamic Video (Time only)</Name>
+        <Name>Dynamic Video - Landscape</Name>
         <Widget>
-          <WidgetId>liveVideoTime</WidgetId>
+          <WidgetId>landscapeVideos</WidgetId>
           <Type>GroupButton</Type>
           <Options>size=4</Options>
           <ValueSpace>
             <Value>
-              <Key>1</Key>
-              <Name>Smoke</Name>
+              <Key>Oregon</Key>
+              <Name>Ocean</Name>
             </Value>
             <Value>
-              <Key>2</Key>
-              <Name>Webex Desk</Name>
+              <Key>LakeFire</Key>
+              <Name>Fire by Lake</Name>
             </Value>
             <Value>
-              <Key>3</Key>
-              <Name>Big Buck Bunny</Name>
+              <Key>Utah</Key>
+              <Name>Utah</Name>
             </Value>
           </ValueSpace>
         </Widget>
       </Row>
       <Row>
-        <Name>Dynamic Video (OBTP)</Name>
+        <Name>Dynamic Video - Other</Name>
         <Widget>
-          <WidgetId>liveVideoObtp</WidgetId>
+          <WidgetId>otherVideos</WidgetId>
           <Type>GroupButton</Type>
           <Options>size=4</Options>
           <ValueSpace>
             <Value>
-              <Key>1</Key>
-              <Name>Ocean</Name>
+              <Key>Magic</Key>
+              <Name>Magic</Name>
             </Value>
             <Value>
-              <Key>2</Key>
-              <Name>Fire by Lake</Name>
+              <Key>Rollercoaster</Key>
+              <Name>Rollercoaster</Name>
             </Value>
             <Value>
-              <Key>3</Key>
-              <Name>Utah</Name>
+              <Key>BigBuckBunny</Key>
+              <Name>Big Buck Bunny</Name>
             </Value>
           </ValueSpace>
         </Widget>
