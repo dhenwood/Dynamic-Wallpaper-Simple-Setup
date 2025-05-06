@@ -32,7 +32,7 @@ Select "Import from file" in the top left.
 Select the "macro-Wallpaper.js" file from your computer (where you unzipped the original file).
 
 ### Step 10
-In the first few lines of the macro, **change the IP address** to reflect the IP address of the codec. Change the username and password if desired. If the username you supply does not exist on the local device, the macro will create it.
+In the first few lines of the macro, **change the IP address** to reflect the IP address of the codec. Change the username and password if desired - if the username you supply does not exist on the local device, the macro will create it. The value **mode** is used to determine if the UI should show the Time and Calendar or just the Time. If you do not have the device setup with a calendar, change this to "time".
 
 ### Step 11
 On the left hand side, select the icon with the box and arrow to upload the macro to the video device .
