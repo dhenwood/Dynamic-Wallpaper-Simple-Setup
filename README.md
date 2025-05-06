@@ -41,4 +41,4 @@ On the left hand side, select the icon with the box and arrow to upload the macr
 Toggle the switch to Enable in order to active the macro.
 
 ### Step 13
-On the Navigator, launch the Wallpaper button and select the desired wallpaper.
+On the Navigator, launch the Wallpaper button and select the desired wallpaper. **NOTE**: the Ocean and Utah videos are large in size so may take up to a minute to load.
