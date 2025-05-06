@@ -3,7 +3,7 @@ import xapi from 'xapi';
 const username = "dynamicWallpaper" // local username account
 const password = "C!sco123" // local password account
 var ipAddress = "192.168.0.20" // update to reflect the video device IP address
-const mode = "time" // if OBTP is setup, set to 'obtp', otherwise set to 'time'
+const mode = "obtp" // if OBTP is setup, set to 'obtp', otherwise set to 'time'
 
 
 xapi.event.on('UserInterface Extensions Widget Action', (event) => {
