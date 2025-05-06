@@ -23,7 +23,7 @@ Select the "wallpaperPageId.xml" from your computer (where you unzipped the orig
 Select the Blue upload button from the top menu to upload to the video device. At this stage, a new button should appear on your video device titled Wallpaper.
 
 ### Step 7
-Select the back arrow from the top left and then select Macros from the left hand menu
+Select the back arrow from the top left and then select Macros Editor from the left hand menu
 
 ### Step 8
 Select Import from file in the top left
@@ -38,4 +38,4 @@ In the first few lines of the macro, change the IP address to reflect the IP add
 Select the Icon with the box and arrow to upload the macro to the video device
 
 ### Step 12
-Toggle the switch to Enable in order to active the macro. **Note** if the video device displays a message indicating that the device needs a reboot, this needs to be done. 
+Toggle the switch to Enable in order to active the macro.
