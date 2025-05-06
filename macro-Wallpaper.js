@@ -2,8 +2,8 @@ import xapi from 'xapi';
 
 const username = "dynamicWallpaper" // local username account
 const password = "C!sco123" // local password account
-var ipAddress = "192.168.0.15" // update to reflect the video device IP address
-const mode = "obtp" // if OBTP is setup, set to 'obtp', otherwise set to 'time'
+var ipAddress = "192.168.0.20" // update to reflect the video device IP address
+const mode = "time" // if OBTP is setup, set to 'obtp', otherwise set to 'time'
 
 
 xapi.event.on('UserInterface Extensions Widget Action', (event) => {
@@ -15,21 +15,23 @@ xapi.event.on('UserInterface Extensions Widget Action', (event) => {
 
   }else if(event.WidgetId == 'landscapeVideos' && event.Type == 'pressed'){
     const video = event.Value
-    const url = `https://www.employees.org/~dhenwood/video/${mode}.html?ipAddress=${ipAddress}&username=${username}&password=${password}&video=${video}`
+    const url = `https://storage.googleapis.com/dynamicwallpaper/${mode}.html?ipAddress=${ipAddress}&username=${username}&password=${password}&video=${video}`
     xapi.command("UserInterface WebView Display", {Url: url, Title: "Dynamic Wallpaper"})
     if(video == "Oregon" || video == "Utah"){
       notifyUI("Updating Wallpaper", "This video is large, so it may take a while to load ⏱️", 8)
     }
     clearPanel();
+    console.log("loading: " + url)
 
   }else if(event.WidgetId == 'otherVideos' && event.Type == 'pressed'){
     var video = event.Value
     if (video == "BigBuckBunny"){
-      video = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny"
+      video = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
     }
-    const url = `https://www.employees.org/~dhenwood/video/${mode}.html?ipAddress=${ipAddress}&username=${username}&password=${password}&video=${video}`
+    const url = `https://storage.googleapis.com/dynamicwallpaper/${mode}.html?ipAddress=${ipAddress}&username=${username}&password=${password}&video=${video}`
     xapi.command("UserInterface WebView Display", {Url: url, Title: "Dynamic Wallpaper"})
     clearPanel();
+    console.log("loading: " + url)
 
   }else if(event.WidgetId == 'screensaverClose' && event.Type == 'pressed'){
       xapi.command("WebEngine DeleteStorage")
@@ -62,6 +64,7 @@ async function init(){
   const allowDeviceCertificateStatus = await xapi.Config.WebEngine.Features.AllowDeviceCertificate.get()
   if(allowDeviceCertificateStatus == "False"){
     xapi.Config.WebEngine.Features.AllowDeviceCertificate.set("True");
+    notifyUI("A reboot is required", "The AllowDeviceCertificate toggle has been set to true, but requires a reboot to apply", 12)
   }
   
   // Check if local user account exists. If not, create local account.
