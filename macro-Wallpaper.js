@@ -2,7 +2,7 @@ import xapi from 'xapi';
 
 const username = "dynamicWallpaper" // local username account
 const password = "C!sco123" // local password account
-var ipAddress = "192.168.0.19" // update to reflect the video device IP address
+var ipAddress = "192.168.0.15" // update to reflect the video device IP address
 const mode = "obtp" // if OBTP is setup, set to 'obtp', otherwise set to 'time'
 
 
@@ -62,7 +62,6 @@ async function init(){
   const allowDeviceCertificateStatus = await xapi.Config.WebEngine.Features.AllowDeviceCertificate.get()
   if(allowDeviceCertificateStatus == "False"){
     xapi.Config.WebEngine.Features.AllowDeviceCertificate.set("True");
-    notifyUI("A reboot is required", "The AllowDeviceCertificate toggle has been set to true, but requires a reboot to apply", 12)
   }
   
   // Check if local user account exists. If not, create local account.
