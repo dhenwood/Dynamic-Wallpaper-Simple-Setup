@@ -1,7 +1,7 @@
 <Extensions>
   <Version>1.11</Version>
   <Panel>
-    <Order>2</Order>
+    <Order>1</Order>
     <PanelId>wallpaperPageId</PanelId>
     <Origin>local</Origin>
     <Location>HomeScreen</Location>
@@ -70,8 +70,8 @@
               <Name>Rollercoaster</Name>
             </Value>
             <Value>
-              <Key>BigBuckBunny</Key>
-              <Name>Big Buck Bunny</Name>
+              <Key>Healthcare</Key>
+              <Name>Healthcare</Name>
             </Value>
           </ValueSpace>
         </Widget>
