@@ -24,8 +24,8 @@ xapi.event.on('UserInterface Extensions Widget Action', (event) => {
 
   }else if(event.WidgetId == 'otherVideos' && event.Type == 'pressed'){
     var video = event.Value
-    if (video == "BigBuckBunny"){
-      video = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    if (video == "Healthcare"){
+      video = "https://videos.pexels.com/video-files/5752729/5752729-uhd_2560_1440_30fps.mp4"
     }
     const url = `https://storage.googleapis.com/dynamicwallpaper/${mode}.html?ipAddress=${ipAddress}&username=${username}&password=${password}&video=${video}`
     xapi.command("UserInterface WebView Display", {Url: url, Title: "Dynamic Wallpaper"})
